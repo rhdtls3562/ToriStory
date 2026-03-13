@@ -1,0 +1,55 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-bg: #fff8f2;
+  --color-primary: #f9c5d1;
+  --color-accent: #c17b3f;
+  --color-text: #4a2e1a;
+  --color-muted: #9c7b5a;
+  --color-surface: #fde8c8;
+  --color-border: #e8d5c4;
+}
+
+@utility font-gaegu {
+  font-family: var(--font-gaegu);
+}
+
+@utility writing-vertical {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+:root {
+  --font-display: var(--font-gaegu);
+}
+
+/* ── 테마 변수 오버라이드 ── */
+[data-theme='spring'] {
+  --color-bg: #fff8f2;
+  --color-primary: #f9c5d1;
+  --color-accent: #c17b3f;
+  --color-text: #4a2e1a;
+  --color-muted: #9c7b5a;
+  --color-surface: #fde8c8;
+  --color-border: #e8d5c4;
+}
+
+[data-theme='y2k'] {
+  --color-bg: #f8f0ff;
+  --color-primary: #b8a9f8;
+  --color-accent: #ff9cee;
+  --color-text: #2d1b69;
+  --color-muted: #7c6bb0;
+  --color-surface: #ede9fe;
+  --color-border: #ddd6fe;
+}
+
+[data-theme='candy'] {
+  --color-bg: #fffbf5;
+  --color-primary: #ffb3c6;
+  --color-accent: #ffdd67;
+  --color-text: #3d2b56;
+  --color-muted: #9d7fb0;
+  --color-surface: #ffe4ec;
+  --color-border: #ffd6e7;
+}
